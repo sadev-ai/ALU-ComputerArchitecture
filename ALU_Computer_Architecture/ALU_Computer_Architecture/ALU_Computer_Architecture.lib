@@ -1,39 +1,39 @@
-timestamp=1751429080262
+timestamp=1751431354689
 
 [~A]
-ModifyID=37
+ModifyID=48
 Version=74
 
 [~MFT]
-0=18|0ALU_Computer_Architecture.mgf|58128|49546
-1=4|1ALU_Computer_Architecture.mgf|121464|118233
-3=4|3ALU_Computer_Architecture.mgf|39976|38642
+0=10|0ALU_Computer_Architecture.mgf|73752|64768
+1=4|1ALU_Computer_Architecture.mgf|161274|157822
+3=4|3ALU_Computer_Architecture.mgf|21344|19882
 
 [alu]
-A/behavioral=A/Behavioral 21|../src/alu.vhd|14|1*119920
-BinW64/behavioral=3*38642
-I=0*56556
-I/behavioral=I/Behavioral 0*57880
-M=11|2|vef|1751429080201|../src/alu.vhd|0*56166*0xfd119d673a2ce878a3e4d190fec81310fd264c7e|0*56485*0x23b75c12e3e89f2ef000564498faa8c2
-M/behavioral=M/Behavioral 21|2|vef|1751429080203|../src/alu.vhd|0*56793*0x3cc2e92bbd651c80a72f6bbdb5c7d85f3ca1ef22|0*57795*0x20116f55b147878295aeff36dce7fc50
-R=../src/alu.vhd|5
-Version=13.0.375.8320 (Windows64)|00000003789cd3f5370600015b00b0|fdc9c85601beb4171a6a25c637e2168e006ba34865257b7b70786da7280eae42
-Version/behavioral=13.0.375.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff45119ba98eb51cd5de623030bf9416922
+A/behavioral=A/Behavioral 21|../src/alu.vhd|15|1*159509
+BinW64/behavioral=3*19882
+I=0*59026
+I/behavioral=I/Behavioral 0*68755
+M=11|2|vef|1751429414065|../src/alu.vhd|0*58612*0x7503ff45cbb0b5a91f7551d86b2dc221f460ca07|0*58955*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=M/Behavioral 21|2|vef|1751431354606|../src/alu.vhd|0*66815*0xc7f764cae294091d0c957880ddfed696f1faf808|0*68101*0x20116f55b147878295aeff36dce7fc50
+R=../src/alu.vhd|6
+Version=13.0.375.8320 (Windows64)|00000003789cd3f5370600015b00b0|fdc9c85601beb4171a6a25c637e2168e9bd159fe5a4960e19c96af13be83f7ac
+Version/behavioral=13.0.375.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff44af13e280f2a3b9691c80986f8f95860
 
 [alu_tb]
-A/behavioral=A/Behavioral 21|../src/ALU_TestBench.vhd|9|1*121464
+A/behavioral=A/Behavioral 21|../src/ALU_TestBench.vhd|9|1*161274
 A/sim=+21|../src/ALU_TestBench.vhd|8|1*49318
-BinW64/behavioral=3*39976
+BinW64/behavioral=3*21344
 I=0*24205
-I/behavioral=I/Behavioral 0*58128
+I/behavioral=I/Behavioral 0*73752
 M=11|2|vef|1751425535047|../src/ALU_TestBench.vhd|0*23911*0x2bb2c24d5c38d3dad430f9d5f5c3250cde38a899|0*24121*0x23b75c12e3e89f2ef000564498faa8c2
-M/behavioral=M/Behavioral 21|2|vef|1751429080237|../src/ALU_TestBench.vhd|0*45263*0xa1029c572ec783ffc9a5f6910f852836307b41d6|0*49857*0x20116f55b147878295aeff36dce7fc50
+M/behavioral=M/Behavioral 21|2|vef|1751431354657|../src/ALU_TestBench.vhd|0*69040*0x40b89d76abe6da57d3313f6a4b99331b32a9a046|0*73654*0x20116f55b147878295aeff36dce7fc50
 M/sim=21|2|vef|1751425190620|../src/ALU_TestBench.vhd|0*18189*0xc4e78bf7f7e8246a42f811c6ddc74af3cf175204|0*19174*0x20116f55b147878295aeff36dce7fc50
 R=../src/ALU_TestBench.vhd|6
 Version=13.0.375.8320 (Windows64)|00000003789cd3f5370600015b00b0|b5ca7ba7583dcb786be856c479ad2f643f2aacb08ebc2d68ed688bf60f901c22
-Version/behavioral=13.0.375.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4178fc74489581c4d280d7331cec7637c
+Version/behavioral=13.0.375.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4e67bb89b1f51085784fc7d85d9c70ef7
 Version/sim=13.0.375.8320 (Windows64)|00000003789cd3f5370600015b00b0|568baa4d5cc541d8a07face3c28717b0c993b78460748c9ef3efa8a83178f1f3
 
 [~U]
-alu=ALU 11|0*55965|
+alu=ALU 11|0*58411|
 alu_tb=ALU_TB 11|0*23793|

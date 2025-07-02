@@ -18,11 +18,8 @@ architecture Behavioral of ALU_TB is
 
     signal A, B, Result : std_logic_vector(7 downto 0);
     signal Operation : std_logic_vector(2 downto 0);
-    
-    -- »—«Ì ‰„«Ì‘ »Â — œ— ‘»ÌÂù”«“
     signal OperationName : string(1 to 15);
-    
-    --  «»⁄ Ã«Ìê“Ì‰ »—«Ì to_hstring œ— VHDL-2002
+
     function to_hex_string(slv: std_logic_vector) return string is
         variable hexlen: integer;
         variable longslv: std_logic_vector(67 downto 0) := (others => '0');
@@ -54,7 +51,6 @@ architecture Behavioral of ALU_TB is
                 when others => hex(hexlen-i) := 'X';
             end case;
         end loop;
-        
         return hex(1 to hexlen);
     end function;
     
@@ -69,102 +65,100 @@ begin
     process
         variable my_line : line;
     begin
-        --  ”  Ã„⁄
+        -- Addition
         Operation <= "000";
         OperationName <= "Addition       ";
-        A <= "00000101"; -- 5
-        B <= "00000011"; -- 3
+        A <= "00000101";  -- 5
+        B <= "00000011";  -- 3
         wait for 10 ns;
-        write(my_line, string'("Operation: ") & OperationName & 
+        write(my_line, string'("Operation: ") & OperationName &
               string'(" A=") & integer'image(to_integer(signed(A))) &
               string'(" B=") & integer'image(to_integer(signed(B))) &
               string'(" Result=") & integer'image(to_integer(signed(Result))));
         writeline(output, my_line);
-        
-        --  ”   ›—Ìﬁ
+
+        -- Subtraction
         Operation <= "001";
         OperationName <= "Subtraction    ";
-        A <= "00001000"; -- 8
-        B <= "00000011"; -- 3
+        A <= "00001000";  -- 8
+        B <= "00000011";  -- 3
         wait for 10 ns;
-        write(my_line, string'("Operation: ") & OperationName & 
+        write(my_line, string'("Operation: ") & OperationName &
               string'(" A=") & integer'image(to_integer(signed(A))) &
               string'(" B=") & integer'image(to_integer(signed(B))) &
               string'(" Result=") & integer'image(to_integer(signed(Result))));
         writeline(output, my_line);
-        
-        --  ”  ÷—»
+
+        -- Multiplication
         Operation <= "010";
         OperationName <= "Multiplication ";
-        A <= "00000101"; -- 5
-        B <= "00000011"; -- 3
+        A <= "00000101";  -- 5
+        B <= "00000011";  -- 3
         wait for 10 ns;
-        write(my_line, string'("Operation: ") & OperationName & 
+        write(my_line, string'("Operation: ") & OperationName &
               string'(" A=") & integer'image(to_integer(signed(A))) &
               string'(" B=") & integer'image(to_integer(signed(B))) &
               string'(" Result=") & integer'image(to_integer(signed(Result))));
         writeline(output, my_line);
-        
-        --  ”   Ê«‰
+
+        -- Power
         Operation <= "011";
         OperationName <= "Power          ";
-        A <= "00000010"; -- 2
-        B <= "00000011"; -- 3 (2^3=8)
+        A <= "00000010";  -- 2
+        B <= "00000011";  -- 3
         wait for 10 ns;
-        write(my_line, string'("Operation: ") & OperationName & 
+        write(my_line, string'("Operation: ") & OperationName &
               string'(" A=") & integer'image(to_integer(signed(A))) &
               string'(" B=") & integer'image(to_integer(unsigned(B))) &
               string'(" Result=") & integer'image(to_integer(signed(Result))));
         writeline(output, my_line);
-        
-        --  ”  AND
+
+        -- Bitwise AND
         Operation <= "100";
-        OperationName <= "Bitwise AND    ";
+        OperationName <= "AND            ";
         A <= "01010101";
         B <= "00110011";
         wait for 10 ns;
-        write(my_line, string'("Operation: ") & OperationName & 
+        write(my_line, string'("Operation: ") & OperationName &
               string'(" A=") & to_hex_string(A) &
               string'(" B=") & to_hex_string(B) &
               string'(" Result=") & to_hex_string(Result));
         writeline(output, my_line);
-        
-        --  ”  OR
+
+        -- Bitwise OR
         Operation <= "101";
-        OperationName <= "Bitwise OR     ";
+        OperationName <= "OR             ";
         A <= "01010101";
         B <= "00110011";
         wait for 10 ns;
-        write(my_line, string'("Operation: ") & OperationName & 
+        write(my_line, string'("Operation: ") & OperationName &
               string'(" A=") & to_hex_string(A) &
               string'(" B=") & to_hex_string(B) &
               string'(" Result=") & to_hex_string(Result));
         writeline(output, my_line);
-        
-        --  ”  XOR
+
+        -- SQRT
         Operation <= "110";
-        OperationName <= "Bitwise XOR    ";
-        A <= "01010101";
-        B <= "00110011";
+        OperationName <= "Square Root    ";
+        A <= "01000000";  -- 64
+        B <= "00000000";  -- ignored
         wait for 10 ns;
-        write(my_line, string'("Operation: ") & OperationName & 
-              string'(" A=") & to_hex_string(A) &
-              string'(" B=") & to_hex_string(B) &
-              string'(" Result=") & to_hex_string(Result));
+        write(my_line, string'("Operation: ") & OperationName &
+              string'(" A=") & integer'image(to_integer(signed(A))) &
+              string'(" Result=") & integer'image(to_integer(signed(Result))));
         writeline(output, my_line);
-        
-        --  ”  Õ«·  ‰«„‘Œ’
+
+        -- LOG2
         Operation <= "111";
-        OperationName <= "Undefined      ";
-        A <= "01010101";
-        B <= "10101010";
+        OperationName <= "Log2           ";
+        A <= "00100000";  -- 32
+        B <= "00000000";  -- ignored
         wait for 10 ns;
-        write(my_line, string'("Operation: ") & OperationName & 
-              string'(" A=") & to_hex_string(A) &
-              string'(" B=") & to_hex_string(B) &
-              string'(" Result=") & to_hex_string(Result));
+        write(my_line, string'("Operation: ") & OperationName &
+              string'(" A=") & integer'image(to_integer(signed(A))) &
+              string'(" Result=") & integer'image(to_integer(signed(Result))));
         writeline(output, my_line);
-        
+
         wait;
     end process;
 end Behavioral;

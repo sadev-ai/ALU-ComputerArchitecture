@@ -1,0 +1,554 @@
+acom -O3 -e 100 -work ALU_Computer_Architecture -2002  $dsn/src/alu.vhd $dsn/src/ALU_TestBench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# Error: COMP96_0019: alu.vhd : (62, 21): Keyword 'end' expected.
+# Error: COMP96_0019: alu.vhd : (63, 21): Keyword 'end' expected.
+# Error: COMP96_0019: alu.vhd : (63, 30): Keyword 'case' expected.
+# Error: COMP96_0019: alu.vhd : (69, 17): Keyword 'end' expected.
+# Error: COMP96_0015: alu.vhd : (71, 21): ';' expected.
+# Error: COMP96_0016: alu.vhd : (71, 23): Design unit declaration expected.
+# Error: COMP96_0018: alu.vhd : (80, 17): Identifier expected.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/ALU_TestBench.vhd
+# Compile Entity "ALU_TB"
+# Compile Architecture "Behavioral" of Entity "ALU_TB"
+# Compile failure 7 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work ALU_Computer_Architecture -2002  $dsn/src/alu.vhd $dsn/src/ALU_TestBench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/ALU_TestBench.vhd
+# Compile Entity "ALU_TB"
+# Compile Architecture "Behavioral" of Entity "ALU_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+ALU_TB ALU_TB Behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5593 kB (elbread=427 elab2=5026 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\ALU_Computer_Architecture\ALU_Computer_Architecture\src\wave.asdb
+#  7:41 AM, Wednesday, July 2, 2025
+#  Simulation has been initialized
+run 200 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ALU_TB/UUT,  Process: line__17.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ALU_TB/UUT,  Process: line__17.
+# KERNEL: Operation: Addition        A=5 B=3 Result=8
+# KERNEL: Operation: Subtraction     A=8 B=3 Result=5
+# KERNEL: Operation: Multiplication  A=5 B=3 Result=15
+# KERNEL: Operation: Power           A=2 B=3 Result=8
+# KERNEL: Operation: Bitwise AND     A=55 B=33 Result=11
+# KERNEL: Operation: Bitwise OR      A=55 B=33 Result=77
+# KERNEL: Operation: Square Root     A=64 Result=8
+# KERNEL: Operation: Log2            A=32 Result=5
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work ALU_Computer_Architecture -2002  $dsn/src/alu.vhd $dsn/src/ALU_TestBench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/ALU_TestBench.vhd
+# Compile Entity "ALU_TB"
+# Compile Architecture "Behavioral" of Entity "ALU_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+asim -O5 +access +r +m+ALU_TB ALU_TB Behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5593 kB (elbread=427 elab2=5026 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\ALU_Computer_Architecture\ALU_Computer_Architecture\src\wave.asdb
+#  7:41 AM, Wednesday, July 2, 2025
+#  Simulation has been initialized
+# add wave -noreg {/ALU_TB/A}
+# add wave -noreg {/ALU_TB/B}
+# add wave -noreg {/ALU_TB/Operation}
+# add wave -noreg {/ALU_TB/OperationName}
+# add wave -noreg {/ALU_TB/Result}
+# VSIM: 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/wave.asdb'.
+run 200 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ALU_TB/UUT,  Process: line__17.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ALU_TB/UUT,  Process: line__17.
+# KERNEL: Operation: Addition        A=5 B=3 Result=8
+# KERNEL: Operation: Subtraction     A=8 B=3 Result=5
+# KERNEL: Operation: Multiplication  A=5 B=3 Result=15
+# KERNEL: Operation: Power           A=2 B=3 Result=8
+# KERNEL: Operation: Bitwise AND     A=55 B=33 Result=11
+# KERNEL: Operation: Bitwise OR      A=55 B=33 Result=77
+# KERNEL: Operation: Square Root     A=64 Result=8
+# KERNEL: Operation: Log2            A=32 Result=5
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work ALU_Computer_Architecture -2002  $dsn/src/alu.vhd $dsn/src/ALU_TestBench1.vhd $dsn/src/ALU_TestBench2.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# Error: COMP96_0078: alu.vhd : (25, 9): Unknown identifier "powResult".
+# Error: COMP96_0133: alu.vhd : (25, 9): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (27, 9): Unknown identifier "logVal".
+# Error: COMP96_0133: alu.vhd : (27, 9): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (43, 25): Unknown identifier "powResult".
+# Error: COMP96_0078: alu.vhd : (43, 38): Unknown identifier "powResult".
+# Error: COMP96_0133: alu.vhd : (43, 25): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (45, 45): Unknown identifier "powResult".
+# Error: COMP96_0133: alu.vhd : (45, 45): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (67, 25): Unknown identifier "logVal".
+# Error: COMP96_0078: alu.vhd : (67, 35): Unknown identifier "logVal".
+# Error: COMP96_0133: alu.vhd : (67, 25): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (69, 45): Unknown identifier "logVal".
+# Error: COMP96_0133: alu.vhd : (69, 45): Cannot find object declaration.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/ALU_TestBench1.vhd
+# Compile Architecture "ExactTest" of Entity "ALU_TB"
+# Too many errors - compilation terminated
+# Error: COMP96_0078: ALU_TestBench1.vhd : (3, 10): Unknown identifier "ALU".
+# Error: COMP96_0134: ALU_TestBench1.vhd : (3, 10): Cannot find component declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (9, 9): Unknown identifier "Operation".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (9, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (9, 29): Unknown identifier "OperationName".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (9, 29): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (10, 9): Unknown identifier "A".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (10, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (10, 26): Unknown identifier "B".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (10, 26): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (11, 49): Unknown identifier "OperationName".
+# Error: COMP96_0078: ALU_TestBench1.vhd : (12, 77): Unknown identifier "Result".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (12, 77): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (15, 9): Unknown identifier "Operation".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (15, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (15, 29): Unknown identifier "OperationName".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (15, 29): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (16, 9): Unknown identifier "A".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (16, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (16, 26): Unknown identifier "B".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (16, 26): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (17, 49): Unknown identifier "OperationName".
+# Error: COMP96_0078: ALU_TestBench1.vhd : (18, 77): Unknown identifier "Result".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (18, 77): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (21, 9): Unknown identifier "Operation".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (21, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (21, 29): Unknown identifier "OperationName".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (21, 29): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (22, 9): Unknown identifier "A".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (22, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (22, 26): Unknown identifier "B".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (22, 26): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (23, 49): Unknown identifier "OperationName".
+# Error: COMP96_0078: ALU_TestBench1.vhd : (24, 77): Unknown identifier "Result".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (24, 77): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (27, 9): Unknown identifier "Operation".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (27, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (27, 29): Unknown identifier "OperationName".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (27, 29): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (28, 9): Unknown identifier "A".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (28, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (28, 26): Unknown identifier "B".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (28, 26): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (29, 49): Unknown identifier "OperationName".
+# Error: COMP96_0078: ALU_TestBench1.vhd : (30, 77): Unknown identifier "Result".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (30, 77): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (33, 9): Unknown identifier "Operation".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (33, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (33, 29): Unknown identifier "OperationName".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (33, 29): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (34, 9): Unknown identifier "A".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (34, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (34, 26): Unknown identifier "B".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (34, 26): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (35, 49): Unknown identifier "OperationName".
+# Error: COMP96_0078: ALU_TestBench1.vhd : (36, 51): Unknown identifier "to_hex_string".
+# Error: COMP96_0078: ALU_TestBench1.vhd : (36, 65): Unknown identifier "Result".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (36, 65): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (39, 9): Unknown identifier "Operation".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (39, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (39, 29): Unknown identifier "OperationName".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (39, 29): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (40, 9): Unknown identifier "A".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (40, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (40, 26): Unknown identifier "B".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (40, 26): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (41, 49): Unknown identifier "OperationName".
+# Error: COMP96_0078: ALU_TestBench1.vhd : (42, 51): Unknown identifier "to_hex_string".
+# Error: COMP96_0078: ALU_TestBench1.vhd : (42, 65): Unknown identifier "Result".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (42, 65): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (45, 9): Unknown identifier "Operation".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (45, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (45, 29): Unknown identifier "OperationName".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (45, 29): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (46, 9): Unknown identifier "A".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (46, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (46, 26): Unknown identifier "B".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (46, 26): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (47, 49): Unknown identifier "OperationName".
+# Error: COMP96_0078: ALU_TestBench1.vhd : (48, 74): Unknown identifier "Result".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (48, 74): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (51, 9): Unknown identifier "Operation".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (51, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (51, 29): Unknown identifier "OperationName".
+# Error: COMP96_0133: ALU_TestBench1.vhd : (51, 29): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench1.vhd : (52, 9): Unknown identifier "A".
+# Compile failure 100 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU_Computer_Architecture -2002  $dsn/src/alu.vhd $dsn/src/ALU_TestBench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# Error: COMP96_0078: alu.vhd : (25, 9): Unknown identifier "powResult".
+# Error: COMP96_0133: alu.vhd : (25, 9): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (27, 9): Unknown identifier "logVal".
+# Error: COMP96_0133: alu.vhd : (27, 9): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (43, 25): Unknown identifier "powResult".
+# Error: COMP96_0078: alu.vhd : (43, 38): Unknown identifier "powResult".
+# Error: COMP96_0133: alu.vhd : (43, 25): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (45, 45): Unknown identifier "powResult".
+# Error: COMP96_0133: alu.vhd : (45, 45): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (67, 25): Unknown identifier "logVal".
+# Error: COMP96_0078: alu.vhd : (67, 35): Unknown identifier "logVal".
+# Error: COMP96_0133: alu.vhd : (67, 25): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (69, 45): Unknown identifier "logVal".
+# Error: COMP96_0133: alu.vhd : (69, 45): Cannot find object declaration.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/ALU_TestBench.vhd
+# Compile Architecture "ExactTest" of Entity "ALU_TB"
+# Too many errors - compilation terminated
+# Error: COMP96_0078: ALU_TestBench.vhd : (3, 10): Unknown identifier "ALU".
+# Error: COMP96_0134: ALU_TestBench.vhd : (3, 10): Cannot find component declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (9, 9): Unknown identifier "Operation".
+# Error: COMP96_0133: ALU_TestBench.vhd : (9, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (9, 29): Unknown identifier "OperationName".
+# Error: COMP96_0133: ALU_TestBench.vhd : (9, 29): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (10, 9): Unknown identifier "A".
+# Error: COMP96_0133: ALU_TestBench.vhd : (10, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (10, 26): Unknown identifier "B".
+# Error: COMP96_0133: ALU_TestBench.vhd : (10, 26): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (11, 49): Unknown identifier "OperationName".
+# Error: COMP96_0078: ALU_TestBench.vhd : (12, 77): Unknown identifier "Result".
+# Error: COMP96_0133: ALU_TestBench.vhd : (12, 77): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (15, 9): Unknown identifier "Operation".
+# Error: COMP96_0133: ALU_TestBench.vhd : (15, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (15, 29): Unknown identifier "OperationName".
+# Error: COMP96_0133: ALU_TestBench.vhd : (15, 29): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (16, 9): Unknown identifier "A".
+# Error: COMP96_0133: ALU_TestBench.vhd : (16, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (16, 26): Unknown identifier "B".
+# Error: COMP96_0133: ALU_TestBench.vhd : (16, 26): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (17, 49): Unknown identifier "OperationName".
+# Error: COMP96_0078: ALU_TestBench.vhd : (18, 77): Unknown identifier "Result".
+# Error: COMP96_0133: ALU_TestBench.vhd : (18, 77): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (21, 9): Unknown identifier "Operation".
+# Error: COMP96_0133: ALU_TestBench.vhd : (21, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (21, 29): Unknown identifier "OperationName".
+# Error: COMP96_0133: ALU_TestBench.vhd : (21, 29): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (22, 9): Unknown identifier "A".
+# Error: COMP96_0133: ALU_TestBench.vhd : (22, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (22, 26): Unknown identifier "B".
+# Error: COMP96_0133: ALU_TestBench.vhd : (22, 26): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (23, 49): Unknown identifier "OperationName".
+# Error: COMP96_0078: ALU_TestBench.vhd : (24, 77): Unknown identifier "Result".
+# Error: COMP96_0133: ALU_TestBench.vhd : (24, 77): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (27, 9): Unknown identifier "Operation".
+# Error: COMP96_0133: ALU_TestBench.vhd : (27, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (27, 29): Unknown identifier "OperationName".
+# Error: COMP96_0133: ALU_TestBench.vhd : (27, 29): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (28, 9): Unknown identifier "A".
+# Error: COMP96_0133: ALU_TestBench.vhd : (28, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (28, 26): Unknown identifier "B".
+# Error: COMP96_0133: ALU_TestBench.vhd : (28, 26): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (29, 49): Unknown identifier "OperationName".
+# Error: COMP96_0078: ALU_TestBench.vhd : (30, 77): Unknown identifier "Result".
+# Error: COMP96_0133: ALU_TestBench.vhd : (30, 77): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (33, 9): Unknown identifier "Operation".
+# Error: COMP96_0133: ALU_TestBench.vhd : (33, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (33, 29): Unknown identifier "OperationName".
+# Error: COMP96_0133: ALU_TestBench.vhd : (33, 29): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (34, 9): Unknown identifier "A".
+# Error: COMP96_0133: ALU_TestBench.vhd : (34, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (34, 26): Unknown identifier "B".
+# Error: COMP96_0133: ALU_TestBench.vhd : (34, 26): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (35, 49): Unknown identifier "OperationName".
+# Error: COMP96_0078: ALU_TestBench.vhd : (36, 51): Unknown identifier "to_hex_string".
+# Error: COMP96_0078: ALU_TestBench.vhd : (36, 65): Unknown identifier "Result".
+# Error: COMP96_0133: ALU_TestBench.vhd : (36, 65): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (39, 9): Unknown identifier "Operation".
+# Error: COMP96_0133: ALU_TestBench.vhd : (39, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (39, 29): Unknown identifier "OperationName".
+# Error: COMP96_0133: ALU_TestBench.vhd : (39, 29): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (40, 9): Unknown identifier "A".
+# Error: COMP96_0133: ALU_TestBench.vhd : (40, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (40, 26): Unknown identifier "B".
+# Error: COMP96_0133: ALU_TestBench.vhd : (40, 26): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (41, 49): Unknown identifier "OperationName".
+# Error: COMP96_0078: ALU_TestBench.vhd : (42, 51): Unknown identifier "to_hex_string".
+# Error: COMP96_0078: ALU_TestBench.vhd : (42, 65): Unknown identifier "Result".
+# Error: COMP96_0133: ALU_TestBench.vhd : (42, 65): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (45, 9): Unknown identifier "Operation".
+# Error: COMP96_0133: ALU_TestBench.vhd : (45, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (45, 29): Unknown identifier "OperationName".
+# Error: COMP96_0133: ALU_TestBench.vhd : (45, 29): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (46, 9): Unknown identifier "A".
+# Error: COMP96_0133: ALU_TestBench.vhd : (46, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (46, 26): Unknown identifier "B".
+# Error: COMP96_0133: ALU_TestBench.vhd : (46, 26): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (47, 49): Unknown identifier "OperationName".
+# Error: COMP96_0078: ALU_TestBench.vhd : (48, 74): Unknown identifier "Result".
+# Error: COMP96_0133: ALU_TestBench.vhd : (48, 74): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (51, 9): Unknown identifier "Operation".
+# Error: COMP96_0133: ALU_TestBench.vhd : (51, 9): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (51, 29): Unknown identifier "OperationName".
+# Error: COMP96_0133: ALU_TestBench.vhd : (51, 29): Cannot find object declaration.
+# Error: COMP96_0078: ALU_TestBench.vhd : (52, 9): Unknown identifier "A".
+# Compile failure 100 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU_Computer_Architecture -2002  $dsn/src/alu.vhd $dsn/src/ALU_TestBench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# Error: COMP96_0078: alu.vhd : (25, 9): Unknown identifier "powResult".
+# Error: COMP96_0133: alu.vhd : (25, 9): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (27, 9): Unknown identifier "logVal".
+# Error: COMP96_0133: alu.vhd : (27, 9): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (43, 25): Unknown identifier "powResult".
+# Error: COMP96_0078: alu.vhd : (43, 38): Unknown identifier "powResult".
+# Error: COMP96_0133: alu.vhd : (43, 25): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (45, 45): Unknown identifier "powResult".
+# Error: COMP96_0133: alu.vhd : (45, 45): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (67, 25): Unknown identifier "logVal".
+# Error: COMP96_0078: alu.vhd : (67, 35): Unknown identifier "logVal".
+# Error: COMP96_0133: alu.vhd : (67, 25): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (69, 45): Unknown identifier "logVal".
+# Error: COMP96_0133: alu.vhd : (69, 45): Cannot find object declaration.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/ALU_TestBench.vhd
+# Compile Entity "ALU_TB"
+# Compile Architecture "Behavioral" of Entity "ALU_TB"
+# Compile failure 14 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work ALU_Computer_Architecture -2002  $dsn/src/alu.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# Error: COMP96_0078: alu.vhd : (25, 9): Unknown identifier "powResult".
+# Error: COMP96_0133: alu.vhd : (25, 9): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (27, 9): Unknown identifier "logVal".
+# Error: COMP96_0133: alu.vhd : (27, 9): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (43, 25): Unknown identifier "powResult".
+# Error: COMP96_0078: alu.vhd : (43, 38): Unknown identifier "powResult".
+# Error: COMP96_0133: alu.vhd : (43, 25): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (45, 45): Unknown identifier "powResult".
+# Error: COMP96_0133: alu.vhd : (45, 45): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (67, 25): Unknown identifier "logVal".
+# Error: COMP96_0078: alu.vhd : (67, 35): Unknown identifier "logVal".
+# Error: COMP96_0133: alu.vhd : (67, 25): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (69, 45): Unknown identifier "logVal".
+# Error: COMP96_0133: alu.vhd : (69, 45): Cannot find object declaration.
+# Compile failure 14 Errors 0 Warnings  Analysis time :  15.0 [ms]
+asim -O5 +access +r +m+ALU_TB ALU_TB Behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+acom -O3 -e 100 -work ALU_Computer_Architecture -2002  $dsn/src/alu.vhd $dsn/src/ALU_TestBench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# Error: COMP96_0078: alu.vhd : (25, 9): Unknown identifier "powResult".
+# Error: COMP96_0133: alu.vhd : (25, 9): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (27, 9): Unknown identifier "logVal".
+# Error: COMP96_0133: alu.vhd : (27, 9): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (43, 25): Unknown identifier "powResult".
+# Error: COMP96_0078: alu.vhd : (43, 38): Unknown identifier "powResult".
+# Error: COMP96_0133: alu.vhd : (43, 25): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (45, 45): Unknown identifier "powResult".
+# Error: COMP96_0133: alu.vhd : (45, 45): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (67, 25): Unknown identifier "logVal".
+# Error: COMP96_0078: alu.vhd : (67, 35): Unknown identifier "logVal".
+# Error: COMP96_0133: alu.vhd : (67, 25): Cannot find object declaration.
+# Error: COMP96_0078: alu.vhd : (69, 45): Unknown identifier "logVal".
+# Error: COMP96_0133: alu.vhd : (69, 45): Cannot find object declaration.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/ALU_TestBench.vhd
+# Compile Entity "ALU_TB"
+# Compile Architecture "Behavioral" of Entity "ALU_TB"
+# Compile failure 14 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work ALU_Computer_Architecture -2002  $dsn/src/alu.vhd $dsn/src/ALU_TestBench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/ALU_TestBench.vhd
+# Compile Entity "ALU_TB"
+# Compile Architecture "Behavioral" of Entity "ALU_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+ALU_TB ALU_TB Behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5593 kB (elbread=427 elab2=5026 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\ALU_Computer_Architecture\ALU_Computer_Architecture\src\wave.asdb
+#  8:09 AM, Wednesday, July 2, 2025
+#  Simulation has been initialized
+# add wave -noreg {/ALU_TB/A}
+# add wave -noreg {/ALU_TB/B}
+# add wave -noreg {/ALU_TB/Operation}
+# add wave -noreg {/ALU_TB/OperationName}
+# add wave -noreg {/ALU_TB/Result}
+# VSIM: 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ALU_TB/UUT,  Process: line__17.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ALU_TB/UUT,  Process: line__17.
+# KERNEL: Operation: Addition        A=5 B=3 Result=8
+# KERNEL: Operation: Subtraction     A=8 B=3 Result=5
+# KERNEL: Operation: Multiplication  A=5 B=3 Result=15
+# KERNEL: Operation: Power           A=2 B=3 Result=8
+# KERNEL: Operation: Bitwise AND     A=55 B=33 Result=11
+# KERNEL: Operation: Bitwise OR      A=55 B=33 Result=77
+# KERNEL: Operation: Square Root     A=64 Result=8
+# KERNEL: Operation: Log2            A=32 Result=5
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work ALU_Computer_Architecture -2002  $dsn/src/alu.vhd $dsn/src/ALU_TestBench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/ALU_TestBench.vhd
+# Compile Entity "ALU_TB"
+# Compile Architecture "Behavioral" of Entity "ALU_TB"
+# Error: COMP96_0367: ALU_TestBench.vhd : (118, 26): Improper array length (7). Expected length is 15.
+# Error: COMP96_0367: ALU_TestBench.vhd : (130, 26): Improper array length (7). Expected length is 15.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  79.0 [ms]
+acom -O3 -e 100 -work ALU_Computer_Architecture -2002  $dsn/src/alu.vhd $dsn/src/ALU_TestBench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/ALU_TestBench.vhd
+# Compile Entity "ALU_TB"
+# Compile Architecture "Behavioral" of Entity "ALU_TB"
+# Error: COMP96_0367: ALU_TestBench.vhd : (70, 26): Improper array length (15). Expected length is 7.
+# Error: COMP96_0367: ALU_TestBench.vhd : (82, 26): Improper array length (15). Expected length is 7.
+# Error: COMP96_0367: ALU_TestBench.vhd : (94, 26): Improper array length (15). Expected length is 7.
+# Error: COMP96_0367: ALU_TestBench.vhd : (106, 26): Improper array length (15). Expected length is 7.
+# Error: COMP96_0367: ALU_TestBench.vhd : (142, 26): Improper array length (15). Expected length is 7.
+# Error: COMP96_0367: ALU_TestBench.vhd : (153, 26): Improper array length (15). Expected length is 7.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work ALU_Computer_Architecture -2002  $dsn/src/alu.vhd $dsn/src/ALU_TestBench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/ALU_TestBench.vhd
+# Compile Entity "ALU_TB"
+# Compile Architecture "Behavioral" of Entity "ALU_TB"
+# Error: COMP96_0367: ALU_TestBench.vhd : (70, 26): Improper array length (15). Expected length is 7.
+# Error: COMP96_0367: ALU_TestBench.vhd : (82, 26): Improper array length (15). Expected length is 7.
+# Error: COMP96_0367: ALU_TestBench.vhd : (94, 26): Improper array length (15). Expected length is 7.
+# Error: COMP96_0367: ALU_TestBench.vhd : (106, 26): Improper array length (15). Expected length is 7.
+# Error: COMP96_0367: ALU_TestBench.vhd : (142, 26): Improper array length (15). Expected length is 7.
+# Error: COMP96_0367: ALU_TestBench.vhd : (153, 26): Improper array length (15). Expected length is 7.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work ALU_Computer_Architecture -2002  $dsn/src/alu.vhd $dsn/src/ALU_TestBench.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/alu.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# File: c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/ALU_TestBench.vhd
+# Compile Entity "ALU_TB"
+# Compile Architecture "Behavioral" of Entity "ALU_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  93.0 [ms]
+asim -O5 +access +r +m+ALU_TB ALU_TB Behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5593 kB (elbread=427 elab2=5026 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\ALU_Computer_Architecture\ALU_Computer_Architecture\src\wave.asdb
+#  8:12 AM, Wednesday, July 2, 2025
+#  Simulation has been initialized
+# add wave -noreg {/ALU_TB/A}
+# add wave -noreg {/ALU_TB/B}
+# add wave -noreg {/ALU_TB/Operation}
+# add wave -noreg {/ALU_TB/OperationName}
+# add wave -noreg {/ALU_TB/Result}
+# VSIM: 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ALU_Computer_Architecture/ALU_Computer_Architecture/src/wave.asdb'.
+run 200 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ALU_TB/UUT,  Process: line__17.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ALU_TB/UUT,  Process: line__17.
+# KERNEL: Operation: Addition        A=5 B=3 Result=8
+# KERNEL: Operation: Subtraction     A=8 B=3 Result=5
+# KERNEL: Operation: Multiplication  A=5 B=3 Result=15
+# KERNEL: Operation: Power           A=2 B=3 Result=8
+# KERNEL: Operation: AND             A=55 B=33 Result=11
+# KERNEL: Operation: OR              A=55 B=33 Result=77
+# KERNEL: Operation: Square Root     A=64 Result=8
+# KERNEL: Operation: Log2            A=32 Result=5
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
