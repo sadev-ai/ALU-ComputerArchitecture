@@ -5,10 +5,10 @@ It is an implementation of an Arithmetic Logic Unit (ALU) using VHDL for the Com
 
 ## Contributors & Links (Start of Document)
 
-- **Iran University of Science and Technology**: [https://www.iust.ac.ir/](https://www.iust.ac.ir/)  
+- **Iran University of Science and Technology**: [https://www.iust.ac.ir/](https://www.iust.ac.ir/)
+- **Professor Somayeh Kashi**: [LinkedIn Profile](https://www.linkedin.com/in/somayeh-kashi-23160736/)
 - **Mohammad Sadegh Hemati**: [LinkedIn Profile](https://www.linkedin.com/in/mohammad-sadegh-hemati/)  
 - **Fatemeh Razzaghi**: [LinkedIn Profile](https://www.linkedin.com/in/fatemeh-razzaghy-80523331a/)  
-- **Professor Somayeh Kashi**: [LinkedIn Profile](https://www.linkedin.com/in/somayeh-kashi-23160736/)
 
 ## Project Overview
 
