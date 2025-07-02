@@ -18,7 +18,11 @@ FLOWTOOLS=NONE
 FAMILY=
 [Files]
 /alu.vhd=-1
-/ALU_TestBench1.vhd=-1
+/ALU_TestBench.vhd=-1
 [Files.Data]
 .\src\alu.vhd=VHDL Source Code
-.\src\ALU_TestBench1.vhd=VHDL Source Code
+.\src\ALU_TestBench.vhd=VHDL Source Code
+[HierarchyViewer]
+HierarchyInformation=alu_tb|sim|0
+ShowHide=ShowTopLevel
+Selected=

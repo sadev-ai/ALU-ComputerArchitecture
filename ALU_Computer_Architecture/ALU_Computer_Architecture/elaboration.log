@@ -1,14 +1,14 @@
-Active-HDL 13.0.375.8320 2025-07-02 05:44:27
+Active-HDL 13.0.375.8320 2025-07-02 07:34:47
 
 Elaboration top modules:
-Architecture                  sim(ALU_tb)
+Architecture                  Behavioral(ALU_TB)
 
 
 -------------------------------------------------------------------------------------------------------------
 Entity   | Architecture | Library                   | Info | Compiler Version          | Compilation Options
 -------------------------------------------------------------------------------------------------------------
-ALU_tb   | sim          | ALU_Computer_Architecture |      | 13.0.375.8320 (Windows64) | -O3
-ALU      | Behavioral   | ALU_Computer_Architecture |      | 13.0.375.8320 (Windows64) | -O3
+ALU_TB   | Behavioral   | alu_computer_architecture |      | 13.0.375.8320 (Windows64) | -O3
+ALU      | Behavioral   | alu_computer_architecture |      | 13.0.375.8320 (Windows64) | -O3
 -------------------------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------------------------
@@ -23,11 +23,11 @@ NUMERIC_STD             | ieee                      |      | 13.0.375.8320 (Wind
 ---------------------------------------------------------------------------------------------------------------
 Library                   | Comment
 ---------------------------------------------------------------------------------------------------------------
-ALU_Computer_Architecture | None
+alu_computer_architecture | None
 ieee                      | Standard IEEE packages library
 std                       | Standard VHDL library
 ---------------------------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O5 +access +r +m+ALU_tb ALU_tb sim
+Simulation Options: asim -O5 +access +r +m+ALU_TB ALU_TB Behavioral
 
