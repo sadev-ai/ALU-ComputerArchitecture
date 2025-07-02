@@ -1,0 +1,9 @@
+[Files List]
+C:\Aldec\Active-HDL-13-x64\vlib\std/src/standard.vhd=S
+C:\Aldec\Active-HDL-13-x64\vlib\std/src/textio.vhd=S
+C:\Aldec\Active-HDL-13-x64\vlib\ieee/src/std_logic_1164.vhdl=S
+C:\Aldec\Active-HDL-13-x64\vlib\ieee/src/std_logic_1164-body.vhdl=S
+C:\Aldec\Active-HDL-13-x64\vlib\ieee/src/numeric_std.vhdl=S
+C:\Aldec\Active-HDL-13-x64\vlib\ieee/src/numeric_std-body.vhdl=S
+c:\My_Designs\ALU_Computer_Architecture\ALU_Computer_Architecture/src/alu.vhd=S
+c:\My_Designs\ALU_Computer_Architecture\ALU_Computer_Architecture/src/ALU_TestBench1.vhd=S

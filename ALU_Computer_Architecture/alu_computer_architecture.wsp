@@ -2,6 +2,10 @@
 Built-in symbols=0
 ALU_Computer_Architecture=0
 [COMPILESTATUS|.\src\alu.vhd]
-FileTimeLow=3719175957
-FileTimeHigh=31189747
-Status=Modified
+FileTimeLow=954154506
+FileTimeHigh=31189750
+Status=Compiled
+[COMPILESTATUS|.\src\ALU_TestBench1.vhd]
+FileTimeLow=22296563
+FileTimeHigh=31189751
+Status=Compiled

@@ -1,1 +1,5 @@
-0
+2
+~E 1 "../src/alu.vhd" 4 ALU
+~A 1 "../src/alu.vhd" 13 Behavioral
+~E 1 "../src/ALU_TestBench1.vhd" 5 ALU_tb
+~A 1 "../src/ALU_TestBench1.vhd" 8 sim
