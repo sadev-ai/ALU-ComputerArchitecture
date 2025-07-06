@@ -22,8 +22,7 @@ FAMILY=
 [Files.Data]
 .\src\alu.vhd=VHDL Source Code
 .\src\ALU_TestBench.vhd=VHDL Source Code
-.\src\ALU_TestBench2.vhd=VHDL Source Code
 [HierarchyViewer]
-HierarchyInformation=alu_tb|sim|0
+HierarchyInformation=alu_tb|Behavioral|0
 ShowHide=ShowTopLevel
 Selected=
